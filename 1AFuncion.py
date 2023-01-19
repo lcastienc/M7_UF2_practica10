@@ -1,7 +1,13 @@
+import numpy as np
 import pandas as pd
 
-
 covid_df = pd.read_csv('df_covid19_countries.csv/df_covid19_countries.csv')
+fech = pd.date_range('2021-01-01',periods=12,freq='M')
+#covid_df = pd.Series(np.arange(12), index= 'total')
+#covid_df = pd.date_range(start='2021-01-01', end='2021-01-31',freq='D')
+print(fech)
+
+
 '''df = pd.read_csv('data.csv')
 datos = {'location':['Costa Rica','England','Canada','Germany','Peru','Australia','Russia','Egypt','Brazil','China'],
          'date':[]}
@@ -26,12 +32,13 @@ print(covid_df['location'].unique().tolist())
 '''
 
 '''print(covid_df.loc[covid_df['total_cases'] > 000.0])'''
+'''
 print(covid_df.tail(3))
+
 print(covid_df.head(3))
 list_dates = covid_df['date'].unique()
-print(list_dates)
-
-lista[]
+'''
+#print(list_dates)
 #total = covid_df.groupby('location')
 #print(total)
 #list_location = covid_df['location'].unique().tolist()
