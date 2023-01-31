@@ -1,3 +1,4 @@
+#Importamos pandas
 import pandas as pd
 
 test = pd.read_csv("test.csv")
@@ -5,5 +6,5 @@ test = pd.read_csv("test.csv")
 
 #pillar valores concretos
 
-selecId = test.columns(3)
+selecId = test[test['id']]
 print(selecId)

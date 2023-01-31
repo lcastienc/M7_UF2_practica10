@@ -14,8 +14,8 @@ max_casos = covid_df['total_cases']
 fech = pd.date_range('2021-01-01',periods=12,freq='M')
 #covid_df = pd.Series(np.arange(12), index= 'total')
 #covid_df = pd.date_range(start='2021-01-01', end='2021-01-31',freq='D')
-#print(fech)
-print(covid_df[['location','date','total_cases']])
+print(fech)
+#print(covid_df[['location','date','total_cases']])
 
 
 #Intentar asociar meses con casos totales
